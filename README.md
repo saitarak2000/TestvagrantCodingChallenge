@@ -15,8 +15,8 @@ catrbon nitogen
 Yes
 
 Output:
-By calling this createdatastructer() method it retrieves the data 
+**By calling this createdatastructer() method it retrieves the data 
 {'mercury': {'atmosphericgases': [], 'moons': 0, 'rings': 'No'}, 'venus': {'atmosphericgases': ['catrbon', 'nitogen'], 'moons': 1, 'rings': 'Yes'}}
-By calling  this countofmoons() method it retrieves the count of moons if rings are present
+**By calling  this countofmoons() method it retrieves the count of moons if rings are present
 1
 
