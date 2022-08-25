@@ -9,7 +9,7 @@ class PlanetaryData:
             planet=input()#to take input of the planet name
             atmosphericgases=[str(i) for i in input().split()]# to store atmospheric gases
             Moons=int(input())# to hold no.of moons
-            Rings=input("enter input as  yes or no")# to hold cboolean value for rings 
+            Rings=input("enter input as  Yes or No")# to hold cboolean value for rings 
             planetinfo={}# to store planet info
             planetinfo['atmosphericgases']=atmosphericgases
             planetinfo['moons']=Moons
