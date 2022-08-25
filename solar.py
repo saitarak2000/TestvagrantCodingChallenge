@@ -17,9 +17,11 @@ class PlanetaryData:
             self.storage[planet]=planetinfo# used dictionary to store values  key will be name of planet and value for that key will be information ofthat particular plannet
         return self.storage
     def countofmoons(self):# method to get no of moons of planets which has rings
+        count=0
         for planet,stats in self.storage.items():
             if stats['rings']=='Yes':
-                print(stats['moons'])
+                count+=stats['moons']
+        return count
     
     def foundonmaxplanets(self):# to retreieve most common gases
       pass
