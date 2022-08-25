@@ -23,9 +23,23 @@ class PlanetaryData:
                 count+=stats['moons']
         return count
     
-    def foundonmaxplanets(self):# to retreieve most common gases
-      pass
+    def foundonmaxplanets(self):# to retreieve most common gases in planets
+         list_gases=[]
+        for values in self.storage.values():
+            gas=values['atmosphericgases']
+            for i in gas:
+                list_gases.append(i)
+        maxi=Counter(list_gases)
+        item=0
+        tup=None
+        for items,values in maxi.items():
+            if values>item:
+                item=values
+                tup=((items,values))
+        print(tup[0])
+      
 
 solarsystem=PlanetaryData()# created a instance to parent class
 print(solarsystem.createdatastructer())# method to store data
 solarsystem.countofmoons()# method to retrive moons
+solarsystem.foundonmaxplanets()#  Method to retrieve gas found in maximum of planets
