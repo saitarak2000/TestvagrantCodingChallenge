@@ -1,3 +1,4 @@
 hello
 good morning 
 
+changes made lets see it from command line
